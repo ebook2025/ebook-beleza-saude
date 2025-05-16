@@ -1,0 +1,1 @@
+const senhaCorreta = "04112006";
