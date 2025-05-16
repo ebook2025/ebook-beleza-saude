@@ -4,7 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beleza e Saúde na Cozinha</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilos básicos para o eBook */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      background: #2e7d32;
+      padding: 10px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+      background-color: #388e3c;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #1b5e20;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px 40px 15px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    header h1 {
+      color: #2e7d32;
+      margin-bottom: 0;
+    }
+    header p {
+      font-size: 1.1em;
+      margin-top: 0;
+      color: #555;
+    }
+    section {
+      margin-top: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #2e7d32;
+      padding-bottom: 6px;
+      color: #2e7d32;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #4caf50;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✔️ ";
+      margin-right: 6px;
+    }
+    ul.beneficios li::before {
+      content: "✅ ";
+    }
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9em;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+    }
+    p strong {
+      color: #2e7d32;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -29,12 +111,12 @@
       <h2>📖 Módulo 1: Introdução</h2>
       <p>Bem-vindo(a) ao e-book mais completo sobre beleza, saúde e longevidade através da alimentação caseira! Neste guia, você encontrará 500 receitas incríveis que vão transformar sua pele, fortalecer seu corpo e melhorar sua qualidade de vida.</p>
       <ul>
-        <li>✔️ Dividido em módulos: pele, rejuvenescimento, corpo, chás, terceira idade e longevidade</li>
-        <li>✔️ Receitas com ingredientes, preparo e como consumir</li>
-        <li>✔️ Rotina sugerida: sucos, saladas, chás e máscaras faciais</li>
+        <li>Dividido em módulos: pele, rejuvenescimento, corpo, chás, terceira idade e longevidade</li>
+        <li>Receitas com ingredientes, preparo e como consumir</li>
+        <li>Rotina sugerida: sucos, saladas, chás e máscaras faciais</li>
       </ul>
       <p><strong>Benefícios:</strong></p>
-      <ul>
+      <ul class="beneficios">
         <li>🧼 Pele jovem e hidratada</li>
         <li>🛡️ Imunidade reforçada</li>
         <li>🔥 Emagrecimento saudável</li>
@@ -144,68 +226,72 @@
       <p><strong>Ingredientes:</strong> 2 colheres de aveia, leite vegetal, canela.</p>
       <p><strong>Preparo:</strong> Cozinhe até engrossar.</p>
 
-      <h3>2. Purê de Abóbora com Frango</h3>
-      <p><strong>Ingredientes:</strong> Abóbora cozida, frango cozido e desfiado.</p>
-      <p><strong>Preparo:</strong> Amasse a abóbora e misture com o frango.</p>
+      <h3>2. Purê de Abóbora</h3>
+      <p><strong>Ingredientes:</strong> Abóbora cozida, azeite, noz moscada.</p>
+      <p><strong>Preparo:</strong> Amasse a abóbora e tempere.</p>
 
-      <h3>3. Vitamina de Mamão com Linhaça</h3>
-      <p><strong>Ingredientes:</strong> 1 fatia de mamão, 1 colher de linhaça, 200 ml de leite vegetal.</p>
-      <p><strong>Preparo:</strong> Bata tudo no liquidificador.</p>
+      <h3>3. Caldo de Legumes</h3>
+      <p><strong>Ingredientes:</strong> Cenoura, chuchu, batata, temperos naturais.</p>
+      <p><strong>Preparo:</strong> Cozinhe tudo e bata no liquidificador.</p>
 
-      <h3>4. Sopa de Legumes com Quinoa</h3>
-      <p><strong>Ingredientes:</strong> Cenoura, batata, chuchu, quinoa, alho.</p>
-      <p><strong>Preparo:</strong> Cozinhe tudo. Bata levemente, se preferir.</p>
+      <h3>4. Chá de Camomila</h3>
+      <p><strong>Ingredientes:</strong> 1 colher de camomila, 200 ml de água.</p>
+      <p><strong>Preparo:</strong> Infusão por 10 minutos.</p>
     </section>
 
     <section id="modulo8">
-      <h2>⏳ Módulo 8: Longevidade e Prevenção</h2>
-      <h3>1. Salada Colorida Antioxidante</h3>
-      <p><strong>Ingredientes:</strong> Alface, tomate, cenoura, beterraba, azeite.</p>
-      <p><strong>Preparo:</strong> Misture tudo e sirva fresco.</p>
+      <h2>⏳ Módulo 8: Longevidade e Vitalidade</h2>
+      <h3>1. Suco Energético de Cenoura e Laranja</h3>
+      <p><strong>Ingredientes:</strong> 2 cenouras, 2 laranjas.</p>
+      <p><strong>Preparo:</strong> Bata e tome fresco.</p>
 
-      <h3>2. Suco de Maçã com Couve e Limão</h3>
-      <p><strong>Ingredientes:</strong> 1 maçã, 1 folha de couve, suco de 1 limão.</p>
-      <p><strong>Preparo:</strong> Bata tudo com água.</p>
+      <h3>2. Salada Colorida com Quinoa</h3>
+      <p><strong>Ingredientes:</strong> Quinoa cozida, tomate, pepino, milho, cebola roxa.</p>
+      <p><strong>Preparo:</strong> Misture e tempere com limão e azeite.</p>
 
-      <h3>3. Caldo de Osso Rico em Colágeno</h3>
-      <p><strong>Ingredientes:</strong> Ossos de frango ou boi, alho, cebola, cenoura.</p>
-      <p><strong>Preparo:</strong> Cozinhe por 6 horas na pressão.</p>
+      <h3>3. Chá Verde com Ginseng</h3>
+      <p><strong>Ingredientes:</strong> Chá verde e um pedaço pequeno de ginseng.</p>
+      <p><strong>Preparo:</strong> Infusão por 5 minutos.</p>
 
-      <h3>4. Mix de Frutas com Sementes</h3>
-      <p><strong>Ingredientes:</strong> Mamão, maçã, banana, chia, linhaça.</p>
-      <p><strong>Preparo:</strong> Sirva como salada de frutas.</p>
+      <h3>4. Mix de Sementes</h3>
+      <p><strong>Ingredientes:</strong> Linhaça, girassol, abóbora, chia.</p>
+      <p><strong>Consumo:</strong> Adicione em saladas e iogurtes.</p>
     </section>
 
     <section id="modulo9">
-      <h2>📅 Módulo 9: Rotina para 10 Anos a Mais de Vida Saudável</h2>
-      <p><strong>Manhã:</strong></p>
+      <h2>🗓️ Módulo 9: Rotina de Beleza e Saúde</h2>
+      <p>Para melhores resultados, siga essa rotina diária:</p>
       <ul>
-        <li>🥤 Suco detox (ex: couve com limão)</li>
-        <li>🚶 Caminhada de 15 minutos</li>
-        <li>🍎 Café leve com frutas e aveia</li>
+        <li>Manhã: Suco verde + máscara facial 2x por semana</li>
+        <li>Almoço: Salada colorida + prato principal saudável</li>
+        <li>Tarde: Chá medicinal + lanche funcional</li>
+        <li>Noite: Caldo leve + chá relaxante</li>
       </ul>
-      <p><strong>Tarde:</strong></p>
-      <ul>
-        <li>🥗 Almoço natural com salada e proteína magra</li>
-        <li>🍃 Chá digestivo (ex: hortelã)</li>
-      </ul>
-      <p><strong>Noite:</strong></p>
-      <ul>
-        <li>🥣 Jantar leve (sopa ou salada)</li>
-        <li>🌙 Chá calmante (camomila, melissa)</li>
-        <li>🛌 Dormir 7-8h por noite</li>
-      </ul>
-      <p><strong>Extras semanais:</strong></p>
-      <ul>
-        <li>🧖‍♀️ 2 máscaras faciais</li>
-        <li>🤸 3 sessões de alongamento</li>
-        <li>⏱️ 1 jejum de 12h (com acompanhamento)</li>
-      </ul>
+      <p><strong>Dica:</strong> Beba pelo menos 2 litros de água por dia e pratique exercícios regularmente.</p>
     </section>
 
     <footer>
       <p>© 2025 - Ebook Beleza e Saúde. Todos os direitos reservados.</p>
     </footer>
   </main>
+
+  <script>
+    function pedirSenha() {
+      const senhaCorreta = "04112006"; // troque aqui pela sua senha
+      const senhaUsuario = prompt("Digite a senha para acessar o site:");
+
+      if (senhaUsuario === senhaCorreta) {
+        document.querySelector("main.container").style.display = "block";
+      } else {
+        alert("Senha incorreta! Você será redirecionado.");
+        window.location.href = "https://www.google.com";
+      }
+    }
+
+    window.onload = function() {
+      document.querySelector("main.container").style.display = "none";
+      pedirSenha();
+    }
+  </script>
 </body>
 </html>
