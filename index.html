@@ -274,24 +274,6 @@
       <p>© 2025 - Ebook Beleza e Saúde. Todos os direitos reservados.</p>
     </footer>
   </main>
-
-  <script>
-    function pedirSenha() {
-      const senhaCorreta = "04112006"; // troque aqui pela sua senha
-      const senhaUsuario = prompt("Digite a senha para acessar o site:");
-
-      if (senhaUsuario === senhaCorreta) {
-        document.querySelector("main.container").style.display = "block";
-      } else {
-        alert("Senha incorreta! Você será redirecionado.");
-        window.location.href = "https://www.google.com";
-      }
-    }
-
-    window.onload = function() {
-      document.querySelector("main.container").style.display = "none";
-      pedirSenha();
-    }
-  </script>
+  
 </body>
 </html>
